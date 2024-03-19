@@ -6,7 +6,7 @@ function Prodects (){
     const [prodects, setprodects] = useState([]);
 
     useEffect(() => {
-        fetch('http://localhost:3000/prodects')
+        fetch('http://localhost:9000/prodects')
         .then((res) => res.json())
         .then((data) => {setprodects(data)})
     }, []);

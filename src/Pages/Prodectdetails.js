@@ -6,7 +6,7 @@ function Prodectdetails(){
     let {prodectID} = useParams();
 
     useEffect(() => {
-        fetch(`http://localhost:3000/prodects/${prodectID}`)
+        fetch(`http://localhost:9000/prodects/${prodectID}`)
         .then((res) => res.json())
         .then((newProdect) => {setProdect(newProdect)})
     }, []);
